@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package principal;
+package Jframes;
 
 import bancoDados.acessoDados;
 import metodos.metodos;
@@ -254,6 +254,7 @@ public class Agendamento extends javax.swing.JFrame {
     }//GEN-LAST:event_tfCPFBuscarActionPerformed
 
     private void btCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCancelarActionPerformed
+        //excluir Agendamento//
         this.dispose();
     }//GEN-LAST:event_btCancelarActionPerformed
 
@@ -266,7 +267,7 @@ public class Agendamento extends javax.swing.JFrame {
          String inserirAge = "INSERT INTO agendamento (data_age) VALUES ('"+metodos.retornardataMySql(tfDataAgend.getText().toString())+"')";
         acessoDados.inserirBd(inserirAge);//inset animal
         
-        
+   
         this.dispose();
     }//GEN-LAST:event_btAgendar1ActionPerformed
 

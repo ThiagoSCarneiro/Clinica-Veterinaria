@@ -125,10 +125,6 @@ public class acessoDados {
     
     }
    
-  
-    
-    
-
     public ArrayList<String> getList() {
         return list;
     }
